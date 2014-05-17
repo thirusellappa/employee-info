@@ -12,14 +12,13 @@ class UsersController < ApplicationController
   
   def create
     @user = User.new(user_params)
-		@us
-    #~ if @user.save
-      #~ @user.calculate_pay
-      #~ redirect_to @user
-    #~ else
-      #~ p @user.errors
-      #~ render "new"
-    #~ end
+    if @user.save
+      @user.calculate_pay
+      redirect_to @user
+    else
+      p @user.errors
+      render "new"
+    end
   end
   
   def show
