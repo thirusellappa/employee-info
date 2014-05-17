@@ -18,3 +18,7 @@ development:
 production:
   <<: *default
   database: employee_info
+  
+test:
+  <<: *default
+  database: employee_info
