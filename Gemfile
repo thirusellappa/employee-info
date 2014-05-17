@@ -26,7 +26,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 #Mysql adapter
-gem 'mysql2'
+#gem 'mysql2'
 gem 'will_paginate'
 
 gem 'heroku'
